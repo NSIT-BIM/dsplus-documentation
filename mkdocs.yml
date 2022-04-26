@@ -8,10 +8,11 @@ nav:
         - config/confFile.md
         - config/env.md
         - config/git.md
- #   - Tutoriaux:
- #       - tutos/designerIntegration.md
- #       - tutos/automatePlugins.md
- #       - tutos/openQualityReport.md
+    - Tutoriaux:
+       - Personnalisation:
+          - tutos/customization/designerIntegration.md
+          - tutos/customization/automatePlugins.md
+          - tutos/customization/qualityReport.md
  #       - tutos/versionTracking.md
     - Fonctionalités: 
         - features/projects.md
@@ -37,3 +38,10 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
