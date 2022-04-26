@@ -1,0 +1,27 @@
+site_name: NSITBIM - dsplus - documentation
+site_url: https://nsitbim.gitlab.io/satellites/dsplus/documentation
+site_dir: public
+nav:
+    - Introduction: index.md
+    - Fonctionalités: 
+        - features/projects.md
+        - features/list.md
+        - features/get.md
+        - features/init.md
+        - features/status.md
+        - features/package.md
+        - features/manifest.md
+        - features/deploy.md
+        - features/quality.md
+        - features/coverage.md
+        - features/check.md
+        - features/configure.md
+        - features/current.md
+        - features/encrypt.md
+        - features/properties.md
+        - features/publish.md
+
+
+theme: readthedocs
+markdown_extensions:
+  - admonition
