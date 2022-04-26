@@ -37,6 +37,7 @@ theme: material
 markdown_extensions:
   - admonition
   - attr_list
+<<<<<<< HEAD
   - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
@@ -45,3 +46,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true 
+=======
+  - md_in_html
+>>>>>>> cc31d17569e90359a123223093fcb4e04a5b7a78
