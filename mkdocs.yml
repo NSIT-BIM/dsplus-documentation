@@ -8,11 +8,11 @@ nav:
         - config/confFile.md
         - config/env.md
         - config/git.md
-    - Tutoriaux:
-        - tutos/designerIntegration.md
-        - tutos/automatePlugins.md
-        - tutos/openQualityReport.md
-        - tutos/versionTracking.md
+ #   - Tutoriaux:
+ #       - tutos/designerIntegration.md
+ #       - tutos/automatePlugins.md
+ #       - tutos/openQualityReport.md
+ #       - tutos/versionTracking.md
     - Fonctionalités: 
         - features/projects.md
         - features/list.md
