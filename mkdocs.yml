@@ -1,5 +1,5 @@
 site_name: NSITBIM - dsplus - documentation
-site_url: https://nsitbim.gitlab.io/satellites/dsplus/documentation
+site_url: https://nsitbim.gitlab.io/satellites/dsplus/documentations
 site_dir: public
 nav:
     - Introduction: index.md
@@ -32,6 +32,11 @@ nav:
         - features/properties.md
         - features/publish.md
 
+plugins:
+  - search:
+      lang: 
+        - en
+        - fr
 
 theme: material
 markdown_extensions:
@@ -45,3 +50,4 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true 
+

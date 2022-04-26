@@ -42,14 +42,14 @@ Un package produit avec dsplus contient également un manifeste décrivant les i
     * date de packaging
     * repository git distant (si possible)
 * Checksums des objets datastage
-* Metadonnées des objets datastage
+* Métadonnées des objets datastage
 * En mode FULL:
-    * liste des objets datastages
+    * liste des objets datastage
     * liste des objets externes
 * En mode DELTA:
-    * liste des objets datastages créés
-    * liste des objets datastages modifiés
-    * liste des objets datastages supprimés
+    * liste des objets datastage créés
+    * liste des objets datastage modifiés
+    * liste des objets datastage supprimés
     * liste des objets externes créés
     * liste des objets externes modifiés
     * liste des objets externes supprimés

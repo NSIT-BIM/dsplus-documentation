@@ -36,7 +36,7 @@ On peut définir son propre mode de chiffrement, pour cela il est nécessaire de
 * security.provider/DSP_SECURITY_provider: nom de la méthode (ex: *custom*)
 * security.key/DSP_SECURITY_key: clé de chiffrement
 * security.iv/DSP_SECURITY_iv : taille du vecteur d'initialisation
-* security.algorithm/DSP_SECURITY_algorithm: algorythme de chiffrement
+* security.algorithm/DSP_SECURITY_algorithm: algorithme de chiffrement
 
 
 ## Format de sortie

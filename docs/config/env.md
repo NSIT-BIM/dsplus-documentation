@@ -11,7 +11,7 @@ Toute option peut être valorisée par variable d'environnement en respectant la
 <code>DSP_[OPTION]</code>
 L'option devant être en majuscules, ex:
 `DSP_PROJECT` est équivalent à l'option `--project`
-Lles commandes dsplus ci-dessous sont équivalentes:
+Les commandes dsplus ci-dessous sont équivalentes:
 ```bash
 dsplus list --project dstage1
 ######
@@ -23,7 +23,7 @@ dsplus list
 
 ## Cas spéciaux
 
-Certaines options définies dans le fichier de configuration peuvent être de type hierarchiques. Par exemple l'option *filters*:
+Certaines options définies dans le fichier de configuration peuvent être de type hiérarchiques. Par exemple l'option *filters*:
 ```yaml
 filters:
   category: Jobs

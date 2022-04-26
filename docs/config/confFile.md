@@ -59,7 +59,7 @@ L'extension peut être donc:
     ```
 
 !!! tip
-    On recomandera de préférence les formats yaml ou toml ceux-ci permettant notamment l'ajout de commentaires contrairement au json.
+    On recommandera de préférence les formats yaml ou toml ceux-ci permettant notamment l'ajout de commentaires contrairement au json.
 
 ### Structure et Sections
 
@@ -124,10 +124,9 @@ maxget | init | int |  Nombre d'opérations en parallèle | 10
 maxexport | init | int | Nombre d'asset par batch d'export | 50
 rollback | deploy | bool |  Produit un isx des assets modifiés avant de les écraser (mode FULL)
 deletes | deploy | bool | Supprime les assets supprimés de git
-deletes | git/init | chaine | Format et destination (avec <code>target</code> comme racine) des fichiers produits. Syntaxe avec des placesholders. | [category]/[name]/[name]
-extdir | package | chaine | Répertoire à la racine du repository git contenant des assets externes non-datastage à packager/deployer | external
+deletes | git/init | chaîne | Format et destination (avec <code>target</code> comme racine) des fichiers produits. Syntaxe avec des placesholders. | [category]/[name]/[name]
+extdir | package | chaîne | Répertoire à la racine du repository git contenant des assets externes non-datastage à packager/deployer | external
 exttar | package | bool | les assets externes sont d'abord réunis en un tar avant d'être packagés.
-customparser | get | chaine | chemin vers un fichier pour personnaliser le parser qui génère la représentation json du job
+customparser | get | chaîne | chemin vers un fichier pour personnaliser le parser qui génère la représentation json du job
 compilation | get/init/package | bool | active la vérification de compilation du job
 
-#

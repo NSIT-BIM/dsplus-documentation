@@ -72,7 +72,7 @@ Les commandes reconnues par défauts sont:
 * **status** : comparer un projet avec un repository local
 * **package** : packager les objets d'un repository local
 * **deploy** : déployer un package vers un projet
-* **quality**: controler le respect de normes de qualité
+* **quality**: contrôler le respect de normes de qualité
 * **coverage**: état des tests
 * **configure**: appliquer une configuration sur un projet
 * **publish**: publier un package sur un gestionnaire d'artefacts
@@ -96,7 +96,7 @@ env | | chaîne | Un environnement défini dans le fichier de configuration
 project | P | chaîne | Nom du projet DataStage
 target | | chaîne | Chemin vers un dossier cible local
 verbose | v | bool | Affichage plus verbeux
-output | o | bool | Ecrire les informations dans le dossier cible
+output | o | bool | Écrire les informations dans le dossier cible
 format | f | chaîne | Format de la sortie standard, par défaut du json "pretty printed", les formats possibles: table, mtable (format markdown), csv, json, html (pour certains cas)
 query | | chaîne | requête à appliquer à la sortie standard, soit au format sql: "select * from ?" soit au format jsonata (https://jsonata.org/)
 
@@ -144,7 +144,7 @@ pack | | chaîne | Nom du package
 
 ## Fichier de configuration
 
-Il est recommandé de mettre en place un fichier de configuration adapté à l'environnement et à l'usage souhaité. Cela permetra de simplifier les commandes. 
+Il est recommandé de mettre en place un fichier de configuration adapté à l'environnement et à l'usage souhaité. Cela permettra de simplifier les commandes. 
 
 Le fichier est peut-être au format, YAML, JSON ou [TOML](https://github.com/toml-lang/toml), on peut y spécifier toutes les options dans les sections et sous-sections:
 
@@ -157,24 +157,26 @@ Les options générales sont définies dans la section defaults on peut définir
 En cas d'option définie de manière multiple la priorité est la suivante:
 Ligne de commande > env > defaults
 
-* Exemple au format yaml:
-```yaml
-defaults:
-  dspath: "C:/IBM/InformationServer"
-  domain: "localhost:9446"
-  server: IS-ENGINEDOCKER
-  username: isadmin
-  password: "password"
-```
-* Exemple au format toml:
-```toml
-[defaults]
-  dspath="C:/IBM/InformationServer"
-  domain="localhost:9446"
-  server=IS-ENGINEDOCKER
-  username=isadmin
-  password="password"
-```
+
+=== "toml"
+    ``` toml
+    [defaults]
+      dspath="C:/IBM/InformationServer"
+      domain="localhost:9446"
+      server=IS-ENGINEDOCKER
+      username=isadmin
+      password="password"
+    ``` 
+
+=== "yaml"
+    ```yaml
+    defaults:
+      dspath: "C:/IBM/InformationServer"
+      domain: "localhost:9446"
+      server: IS-ENGINEDOCKER
+      username: isadmin
+      password: "password"
+    ```
 
 ## Formats de sortie
 
@@ -187,7 +189,7 @@ Les fichiers plats sont en général produit lors des commandes `get` ou `init` 
 
 La sortie standard peut être de plusieurs types:
 
-* Informations d'éxecutions (commandes `init/package/deploy`)
+* Informations d'executions (commandes `init/package/deploy`)
 * JSON ou multi-json (commandes `list/get(metadata,ast,manifest,current,status)`)
 
 Lorsque la sortie est de type JSON on peut utiliser l'option `query` pour la formater. On peut également indiquer l'option `format`.

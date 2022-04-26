@@ -23,7 +23,7 @@ Il est nécessaire de configurer le ou les gestionnaires en fonction de leur api
 * registry: définition du nom du gestionnaire par défaut
 * dependencies:
   * *registry* : nom du gestionnaire
-    * uri: Endpoint de l'api ou de la racinne de dépôt 
+    * uri: Endpoint de l'api ou de la racine du dépôt 
     * path: emplacement des packages
     * options: options pour l'api (authentification etc...) 
 

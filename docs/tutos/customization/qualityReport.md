@@ -28,7 +28,7 @@ On commence par définir le raccourci qui sera intégré au Designer:
 
 ## Designer
 
-On ajoute comme précédement une commande au Custom Tools. La commande de génération de rapport qualité ne générant des informations que sur la sortie standard, il faut faire une redirections. Certaines commandes complexes n'étant pas toujours supportées on contourne en appelant en réalité, le programme git-bash et en lui passant la commande en argument:
+On ajoute comme précédemment une commande au Custom Tools. La commande de génération de rapport qualité ne générant des informations que sur la sortie standard, il faut faire une redirections. Certaines commandes complexes n'étant pas toujours supportées on contourne en appelant en réalité, le programme git-bash et en lui passant la commande en argument:
 
 * Command: `C:\Program Files\Git\git-bash.exe`
 * Arguments: `-c "dsplus qualityReport --job %JobName --project %ProjectName > /tmp/%JobName.html"`

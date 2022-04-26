@@ -37,7 +37,7 @@ Les options possibles:
 * ast : représentation json du job
 * doc : documentation markdown de l'objet
 * checksum: hash de l'objet
-* run : informations sur la dernière éxecution du job (nécessite que l'operation console soit active)
+* run : informations sur la dernière exécution du job (nécessite que l'operation console soit active)
 * output : écrire les informations extraites dans des fichiers
 * target : racine de la cible pour les fichiers
 * git : indexe l'objet

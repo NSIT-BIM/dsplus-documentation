@@ -9,7 +9,7 @@ description: Contrôler la qualité
 
 Vérifie le respect des normes et bonnes pratiques des objets d'un projet.
 
-Des règles standards sont précodées et seront appliquées par défaut. Il est possible de définir des régles ou de modifier les règles standards.
+Des règles standards sont précodées et seront appliquées par défaut. Il est possible de définir des règles ou de modifier les règles standards.
 
 Produit les informations suivantes:
 
@@ -30,12 +30,12 @@ Produit les informations suivantes:
 
 ### Dynamique
 
-Pour analayser directement le projet:
+Pour analyser directement le projet:
 ```
 dsplus quality --project Projet [options]
 ```
 
-La commande et les options sont similiaires à la commande `list`
+La commande et les options sont similaires à la commande `list`
 
 ### Statique
 
@@ -45,7 +45,7 @@ Pour analyser des objets extraits dans un repository, pour une utilisation dans 
 dsplus quality --external Category/Job
 ```
 
-Supporte le globbing, par exemple pour analyser tout le repository:
+Supporte le globing, par exemple pour analyser tout le repository:
 ```
 dsplus quality --external "**"
 ```
@@ -59,7 +59,7 @@ dsplus quality --external "Category/**"
 
 
 !!! warning
-    Pour que ces analyses statiques fonctionnent correctement il est nécessaire que le repository continnent les métadonnées, la représentation syntaxique et les informations de dernière executions des objets. Soit lors d'un `dsplus get` ou `dsplus init` les options:
+    Pour que ces analyses statiques fonctionnent correctement il est nécessaire que le repository contiennent les métadonnées, la représentation syntaxique et les informations de dernière executions des objets. Soit lors d'un `dsplus get` ou `dsplus init` les options:
     --metadata
     --info name type jobType
     --ast
@@ -75,7 +75,7 @@ La sortie par défaut est au format `json`.
 ### Formateurs additionnels
 
 * html: l'option `--html` produit un rapport html
-* Code Climate: l'option `codecliamte/DSP_CODECLIMATE` produit la sortie suivant le standard Code Climate (peut être combiné avec le format html)
+* Code Climate: l'option `codeclimate/DSP_CODECLIMATE` produit la sortie suivant le standard Code Climate (peut être combiné avec le format html)
 
 
 ## Exemples

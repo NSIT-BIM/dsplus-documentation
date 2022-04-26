@@ -1,6 +1,6 @@
 ---
 tags: dsplus,howtos
-title : Integrétation Designer
+title : Integration Designer
 description: Quickstart dsplus
 ---
 
@@ -10,7 +10,7 @@ description: Quickstart dsplus
 ## Raccourcis
 
 Pour gagner du temps, on peut créer des raccourcis qui simplifieront le workflow.
-Editer le fichier `dsplus.yml` créé précédemment et ajouter les  lignes ci-dessous:
+Éditer le fichier `dsplus.yml` créé précédemment et ajouter les  lignes ci-dessous:
 
 ````yaml
 shortcuts:
@@ -106,12 +106,12 @@ Bien que plus souple cette méthode poser le risque des erreurs de saisies.
 
 ### Templating
 
-La façon dont dsplus organise le dépot est pilotée par:
+La façon dont dsplus organise le dépôt est pilotée par:
 
 * l'argument target: racine du dépôt
 * l'argument targetformat: arborescence des objets
 
-Par défault la racine est le répertoire courant ou la racine du dépôt s'il s'agit d'un dépôt git.
+Par défaut la racine est le répertoire courant ou la racine du dépôt s'il s'agit d'un dépôt git.
 Par défaut l'arborescence est la suivante:
 
 ```
@@ -135,7 +135,7 @@ Un mécanisme de templating permet de personnaliser cette organisation et accept
 
 Plus les arguments spéciaux sur la catégorie:
 
-* `categories.x`: où x est le numéro du dossier, permet de selectionner un dossier spécifique.
+* `categories.x`: où x est le numéro du dossier, permet de sélectionner un dossier spécifique.
 * `categories.-x`: où x est le nombre de dossiers à ignorer, permet de sélectionner les dossiers à partir d'une profondeur arbitraire.
 
 Par défaut l'argument targetformat est donc `[category]/[name]/[name]`.
@@ -144,7 +144,7 @@ Enfin on peut donc lier l'emplacement d'un dépôt à la catégorie racine en sp
 ```yaml
 target: "C:/.../CheminDepots/[categories.0]
 ```
-Eventuellement, en ajoutant spécifiant le format de l'arborescence de sorte à ignorer la catégorie racine, cela évitera la répétition:
+Éventuellement, en ajoutant spécifiant le format de l'arborescence de sorte à ignorer la catégorie racine, cela évitera la répétition:
 ```yaml
 targetformat: "[_category-1]/[name]/[name]"
 ```

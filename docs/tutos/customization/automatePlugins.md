@@ -20,7 +20,7 @@ Cela restant des opérations essentiellement manuelles, nous allons voir comment
 ## Plugins dsplus
 
 Comme pour les raccourcis, on définit les plugins dans le fichier de configuration.
-Ici on veut déclencher automatiquement tout ou une partie de l'enchainement suivant:
+Ici on veut déclencher automatiquement tout ou une partie de l'enchaînement suivant:
 
 ```bash
 git status
@@ -43,8 +43,8 @@ Pour déclarer un plugin on doit définir:
 * son type: ici, bin
 * le programme/commande
 * les arguments: un tableau d'arguments qui seront passés à la commande. Ceux ci sont templatables.
-* l'evenement déclencheur du plugin: ici la fin de la commande get se traduire donc par "end:get"
-* le contexte dans lequel le plugin se déclenchera: ici lors de l'appel à la commande get, pour simplifier et éviter le déclenchment itempestif on choisi de lier la plugin au raccourcis créée précédemment en ajoutant une option au contexte.
+* l'événement déclencheur du plugin: ici la fin de la commande get se traduire donc par "end:get"
+* le contexte dans lequel le plugin se déclenchera: ici lors de l'appel à la commande get, pour simplifier et éviter le déclenchement intempestif on choisi de lier la plugin au raccourcis créée précédemment en ajoutant une option au contexte.
 
 Pour le programme pour des raisons de facilité et portabilité on choisi de lancer la commande bash, les arguments sont le contenu du script qu'on souhaite lancer.
 
@@ -52,7 +52,7 @@ La déclaration ci-dessous fera qu'après avoir lancé la commande (en ligne de 
 ```
 dsplus git --job ... 
 ```
-L'enchainement suivant se faira automatiquement:
+L'enchaînement suivant se fera automatiquement:
 
 * on se place dans le dépôt,
 * vérification du statut,
@@ -97,4 +97,4 @@ shortcuts:
 
 !!! info
     Git permet également des raccourcis (alias), son extension (custom subcommands), ou de l'automatisation (git hooks).
-    Ces fonctionalités peuvent être utilisées telles-quelles ou combinées avec dsplus. 
+    Ces fonctionnalités peuvent être utilisées telles-quelles ou combinées avec dsplus. 

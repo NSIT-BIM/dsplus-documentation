@@ -17,7 +17,7 @@ Cette commande produit 3 informations:
 Peut être appliquée directement à un projet ou pour vérifier le taux de tests d'un package contre un projet.
 
 !!! info
-    Un test est considéré réussi si le job a été éxecuté correctement après sa dernière modification. 
+    Un test est considéré réussi si le job a été exécuté correctement après sa dernière modification. 
 
 
 
@@ -31,9 +31,9 @@ Avec l'options verbose la liste complète des objets concernés est produite ave
 
 - Nom
 - Date de modification
-- Date d'éxecution
+- Date d'exécution
 - Statut
-- Temps d'éxecution
+- Temps d'exécution
 - Erreurs
 
 ### Projet
@@ -42,7 +42,7 @@ Avec l'options verbose la liste complète des objets concernés est produite ave
 dsplus coverage --project Projet
 ```
 
-Le perimètre vérifié est celui que renverrais la commande `dsplus list` la même syntaxe s'applique.
+Le périmètre vérifié est celui que renverrais la commande `dsplus list`, la même syntaxe s'applique.
 
 ### Package
 ```
