@@ -3,6 +3,16 @@ site_url: https://nsitbim.gitlab.io/satellites/dsplus/documentation
 site_dir: public
 nav:
     - Introduction: index.md
+    - Quickstart: quickstart.md
+    - Configuration:
+        - config/confFile.md
+        - config/env.md
+        - config/git.md
+ #   - Tutoriaux:
+ #       - tutos/designerIntegration.md
+ #       - tutos/automatePlugins.md
+ #       - tutos/openQualityReport.md
+ #       - tutos/versionTracking.md
     - Fonctionalités: 
         - features/projects.md
         - features/list.md
@@ -22,6 +32,8 @@ nav:
         - features/publish.md
 
 
-theme: readthedocs
+theme: material
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
