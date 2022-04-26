@@ -17,14 +17,49 @@ L'utilisation d'un ou plusieurs fichiers de configuration permet de simplifier g
 
 ## Format et structure
 
-Le fichier peut être aux formats: yaml, [toml](https://github.com/toml-lang/toml, ou json.
+Le fichier peut être aux formats: yaml, [toml](https://github.com/toml-lang/toml), ou json.
 
 L'extension peut être donc:
+
 * yml/yaml
 * cfg (format toml)
 * json
 
+=== "yaml"
+    ``` yaml
+    defaults:
+    dspath: "C:/IBM/InformationServer"
+    domain: "adresseDomaine:portDomain"
+    server: "adresseServeur"
+    username: "userDataStage"
+    password: "motDePasseDataStage"
+    ```
 
+=== "toml"
+    ``` toml
+    [defaults]
+    dspath="C:/IBM/InformationServer"
+    domain="adresseDomaine:portDomain"
+    server="adresseServeur"
+    username="userDataStage"
+    password="motDePasseDataStage"
+    ``` 
+
+=== "json"
+    ```json
+    {
+    "defaults": {
+        "dspath": "C:/IBM/InformationServer",
+        "domain": "adresseDomaine:portDomain",
+        "server": "adresseServeur",
+        "username": "userDataStage",
+        "password": "motDePasseDataStage"
+        }
+    }
+    ```
+
+!!! tip
+    On recomandera de préférence les formats yaml ou toml ceux-ci permettant notamment l'ajout de commentaires contrairement au json.
 
 ### Structure et Sections
 
@@ -94,3 +129,5 @@ extdir | package | chaine | Répertoire à la racine du repository git contenant
 exttar | package | bool | les assets externes sont d'abord réunis en un tar avant d'être packagés.
 customparser | get | chaine | chemin vers un fichier pour personnaliser le parser qui génère la représentation json du job
 compilation | get/init/package | bool | active la vérification de compilation du job
+
+#

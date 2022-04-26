@@ -14,7 +14,7 @@ description: Quickstart dsplus
 
 3- Ajouter le répertoire au PATH de l'utilisateur
 
-![env](https://i.imgur.com/oQxicMI.png){ align=left }
+![](https://i.imgur.com/oQxicMI.png)
 ![](https://i.imgur.com/mykGYaf.png)
 ![](https://i.imgur.com/KItdVlF.png)
 
@@ -22,7 +22,7 @@ description: Quickstart dsplus
 
 Créer le fichier `dsplus.yml `et l'enregistrer dans `C:/Users/IdUser/` avec le contenu ci-dessous en modifiant les valeur de manière adéquate:
 
-```yml
+``` yaml
 defaults:
   dspath: "C:/IBM/InformationServer"
   domain: "adresseDomaine:portDomain"
@@ -36,11 +36,11 @@ defaults:
 
 ![](https://i.imgur.com/Eo1Sq78.png)
 
-!!!info
+!!! tip
     L'emplacement et le nom du fichier de configuration dans l'exemple sont ceux par défaut. Il est possible de le placer et le nommer autrement et ensuite d'y faire faire référence avec l'argument de ligne de commande `--config` ou via la variable d'environnement `DSP_CONFIG`.
 
 
-!!!info
+!!! note
     Dans l'exemple le mot de passe est enregistré en clair dans le fichier de configuration. Celui-ci peut être encrypté (copier/coller l'intégralité de la sortie produite dans le fichier de configuration):
     ````bash
     dsplus encrypt --password motDePasseDataStage
@@ -79,7 +79,6 @@ cd demoProject
 
 * Créer une branche:
 ````git
-
 git checkout -b myBranch
 ````
 
@@ -92,7 +91,7 @@ Certaines options dsplus sont à activer si ou souhaite l'ensemble de fonctionna
 git config dsplus.project demoProject
 ````
 
-!!!info
+!!! note
     Il n'est pas obligatoire de définir cette option mais cela permet de ne pas avoir à spécifier l'argument `--project` à chaque commande.
 
 
@@ -101,7 +100,7 @@ git config dsplus.project demoProject
 git config dsplus.filters.category Categorie/Jobs/
 ````
 
-!!!warning
+!!! warning
     La configuration du dépôt git est locale et ne sera pas partagée avec les autres développeurs.
 
 
@@ -155,7 +154,7 @@ Pousser les modification:
 ````git
 git push -u origin myBranch
 ````
-!!! info
+!!! note
     L'instruction `-u origin myBranch` n'est à spécifier que lors du 1er push sur une nouvelle branche.
 
 
